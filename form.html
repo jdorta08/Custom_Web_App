@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Design</title>
+</head>
+<body>
+
+
+<form id="design_form" action="">
+
+    <div class="pool_shape"><br>
+        <h1 class="title">Step 1: Choose Pool Shape</h1>
+         Pool Shape:
+
+        <div class="shape">
+            <br><input class="pool-input" type="checkbox" id="Freeform" name="Freeform" >
+            <img alt="freeform image" class="pool-image" src="images/Freeform.png">
+            <label class="pool-label" for="Freeform">Freeform</label><br>
+        </div>
+
+        <div class="shape">
+            <br><input class="pool-input" type="checkbox" id="Geometric" name="Geometric" >
+            <img alt="geometric pool image" class="pool-image" src="images/Geometric.png">
+            <label class="pool-label" for="Geometric">Geometric</label><br>
+        </div>
+
+        <div class="shape">
+            <br><input class="pool-input" type="checkbox" id="Oval Pool" name="Oval Pool" >
+            <img alt="Oval Pool Image" class="pool-image" src="images/Oval.png">
+            <label class="pool-label" for="Oval Pool">Oval Pool</label><br>
+        </div>
+
+        <div class="shape">
+            <br><input class="pool-input" type="checkbox" id="Spool" name="Spool" >
+            <img alt="Spool Pool Image" class="pool-image" src="images/Spool.png">
+            <label class="pool-label" for="Spool">"Spool" / Small Pool</label><br>
+        </div>
+
+        <div class="shape">
+            <br><input class="pool-input" type="checkbox" id="Classic" name="Classic" >
+            <img alt="Classic Pool Image" class="pool-image" src="images/Classic.png">
+            <label class="pool-label" for="Classic">Classic</label><br>
+        </div>
+
+        <div class="shape">
+            <br><input class="pool-input" type="checkbox" id="L-Shaped" name="L-Shaped" >
+            <img alt="L Shaped Pool" class="pool-image" src="images/L-Shaped.png">
+            <label class="pool-label" for="L-Shaped">L-Shaped</label><br>
+        </div>
+
+        <div class="shape">
+            <br><input class="pool-input" type="checkbox" id="Lazy L Pool" name="Lazy L Pool" >
+            <img alt="lazy L pool" class="pool-image" src="images/Lazy-L.png">
+            <label class="pool-label" for="Lazy L Pool">Lazy L Pool</label><br>
+        </div>
+
+        <div class="shape">
+            <br><input class="pool-input" type="checkbox" id="Kidney Shaped" name="Kidney Shaped" >
+            <img alt="Kidney Pool Image" class="pool-image" src="images/Kidney.png">
+            <label class="pool-label" for="Kidney Shaped">Kidney Shaped</label><br>
+        </div>
+
+        <div class="shape">
+            <br><input class="pool-input" type="checkbox" id="Figure 8 Pool" name="Figure 8 Pool" >
+            <img alt="Figure 8 Pool" class="pool-image" src="images/Figure-8.png">
+            <label class="pool-label" for="Figure 8 Pool">Figure 8 Pool</label><br>
+        </div>
+
+        <!-- END OF CHECKBOX FOR POOLS SHAPE -->
+
+    </div>
+
+    <!-- Checkbox for Pool Equipment -->
+
+    <div class="pool_addons"><br>
+        <h1 class="title">Step 2: Select Pool Equipment</h1>
+        Pool Equipment:
+
+        <div class="addon">
+            <br><input type="checkbox" id="heater" name="heater">
+            <img alt="Pool Heating Icon" class="pool-addon" src="images/Pool-Heating.png">
+            <label class="pool-label" for="heater"> Pool Heater </label><br>
+        </div>
+
+        <div class="addon">
+            <input type="checkbox" id="illumination" name="illumination" >
+            <img alt="Energy Efficient Icon" class="pool-addon" src="images/Energy-Efficient.png">
+            <label class="pool-label" for="illumination"> Energy Efficiency </label><br>
+        </div>
+
+        <div class="addon">
+            <input type="checkbox" id="automation" name="automation" >
+            <img atl="Automation Pool Icon" class="pool-addon" src="images/Automation.png">
+            <label class="pool-label" for="automation">Automation </label><br>
+        </div>
+
+        <div class="addon">
+            <input type="checkbox" id="water sanitizer" name="water sanitizer">
+            <img alt="Water/Sanitizer Icon" class="pool-addon" src="images/Water-Sanitizer.png">
+            <label class="pool-label" for="water sanitizer"> Water Sanitizer </label><br>
+        </div>
+
+    </div>
+
+    <!--Next and Previous Btn -->
+    <div style="overflow: auto;">
+        <div style="float: right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+    </div>
+
+</form>
+</body>
+</html>
