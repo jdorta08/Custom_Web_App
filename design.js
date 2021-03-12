@@ -1,4 +1,4 @@
-/*var currentTab = 0; // Current tab is set to be the first tab (0)
+var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
 function showTab(n) {
@@ -42,8 +42,8 @@ function nextPrev(n) {
 function validateForm() {
     // This function deals with validation of the form fields
     var x, y, i, valid = true;
-    x = document.getElementsByClassName("tab");
-    y = x[currentTab].getElementsByTagName("input");
+    x = document.getElementsByClassName("contact-tab");
+    y = x[currentTab].getElementsByClassName("input-box");
     // A loop that checks every input field in the current tab:
     for (i = 0; i < y.length; i++) {
         // If a field is empty...
@@ -69,5 +69,5 @@ function fixStepIndicator(n) {
     }
     //... and adds the "active" class to the current step:
     x[n].className += " active";
-}*/
+}
 
