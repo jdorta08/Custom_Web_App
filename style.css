@@ -16,7 +16,7 @@ input.invalid {
 }
 
 /*
-.tab{
+.tab, .contact-tab{
    display: none;
 }*/
 
@@ -98,11 +98,7 @@ input.invalid {
 }
 
 /*step 4 css*/
-.contact, .email{
-    width: fit-content;
-    padding-bottom: 20px;
-}
-.name, .email-label{
+.name-label, .email-label, .lname-label{
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 10px;
@@ -121,8 +117,8 @@ input.invalid {
     background: #90a4cb;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px ;
-    border: solid red 1px;
-    height: 20px;
-    width: 60px;
+    height: 30px;
+    width: 75px;
+    border-radius: 15px;
     margin-top: 15px;
 }
