@@ -1,4 +1,4 @@
-var currentTab = 0; // Current tab is set to be the first tab (0)
+/*var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
 function showTab(n) {
@@ -69,5 +69,5 @@ function fixStepIndicator(n) {
     }
     //... and adds the "active" class to the current step:
     x[n].className += " active";
-}
+}*/
 
