@@ -1,24 +1,36 @@
-.form{
-    align-content: center;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-.design-your-own-pool {
-    text-align: center;
+.body{
+    background-image: linear-
+    gradient((rgb(0,0,0,0.8), rgb(0,0,0,0.8)),url(banner.jpg));
+    background-position: center;
+    background-size: cover;
+}
+.tab{
+    width: fit-content;
+    height: fit-content;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
 }
 
-.solid {
-    width: 50%;
-    align-content: center;
+.h1, .h2{
+    text-align: left;
+    margin-left: 15px;
+    color: rgb(29, 29, 29);
 }
-
+/*
+CSS FOR THE STEPS
+*/
 input.invalid {
     background-color: #ffdddd;
 }
-
-/*
-.tab, .contact-tab{
-   display: none;
-}*/
 
 .step {
     height: 15px;
@@ -41,10 +53,27 @@ input.invalid {
     background-color: #4CAF50;
 }
 
-.desing-your-own-pool {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+/*
+CSS FOR THE COLUMNS AND ROWS 
+*/
+.column {
+    float: left;
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.row {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .pool_shape {
@@ -74,28 +103,9 @@ input.invalid {
     padding-top: 20px;
     width: 170px;
     height: 100px;
-
 }
 
-.column {
-    float: left;
-    width: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
 
-.row {
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 /*step 4 css*/
 .name-label, .email-label, .lname-label{
@@ -110,7 +120,7 @@ input.invalid {
 }
 .input-box-mail{
     display: block;
-    width: 500px;
+    width: 50%;
     height: 150px;
 }
 .input-box-submit{
