@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script>src="design.js"</script>
+    <script>src="./design.js"</script>
     <meta charset="UTF-8">
     <title>Design</title>
 </head>
@@ -220,27 +219,31 @@
 
     <!-- STEP 4 Contact Info-->
 
-    <form name="message" method="post">
+    <form class="contact-tab" name="message" method="post">
+        <h1 class="title">Step 4: Customer Information</h1>
+        <h2>Contact Information:</h2>
         <section>
 
-            <div class="contact" style="float:left;margin-right:20px;">
-                <label class="name" for="name">Name</label>
-                <input class="input-box" style="height: 20px;width: 100%;" id="name" type="text" value="" name="name" placeholder="Name...">
-                <label class="name" for="lname">Last Name</label>
-                <input class="input-box" style="height: 20px;width: 100%;" id="lname" type="text" value="" name="lname" placeholder="Last Name...">
+            <div class="name" style="float:left;margin-right:20px;">
+                <label class="name-label" for="name" >Name</label>
+                <input class="input-box" style="height: 20px;width: 100%;" id="name" type="text" oninput=validateForm() value="" name="name" placeholder="Name..." required>
+            </div> 
+            <div class="lname"  style="float:left;margin-right:20px;">   
+                <label  class="lname-label" for="lname" >Last Name</label>
+                <input class="input-box" style="height: 20px;width: 100%;" id="lname" type="text" oninput=validateForm() value="" name="lname" placeholder="Last Name..." required>
             </div>
 
             <div class="email" style="float:left;">
-                <label class="email-label"  for="email">Email</label>
-                <input class="input-box"  style="height: 20px;width: 100%;" id="email" type="text" value="" name="email" placeholder="Email">
+                <label class="email-label"  for="email" >Email</label>
+                <input class="input-box"  style="height: 20px;width: 100%;" id="email" type="text" oninput=validateForm() value="" name="email" placeholder="Email" required>
             </div>
 
             <br style="clear:both;" />
         </section>
 
         <section>
-            <label class="name" for="message">Message</label>
-            <input class="input-box-mail" id="message" type="text" value="" name="message" placeholder="Comments">
+            <label class="name" for="message" >Message</label>
+            <input class="input-box-mail" id="message" type="text" value="" oninput=validateForm() name="message" placeholder="Comments" required>
             <input class="input-box-submit" type="submit" value="Submit">
         </section>
     </form>
