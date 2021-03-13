@@ -10,48 +10,30 @@
     background-position: center;
     background-size: cover;
 }
-.tab{
+
+.tab, .contact-tab{
     width: fit-content;
     height: fit-content;
+    alignment: center;
     margin: 8% auto;
-    background: rgb(9, 14, 85);
+    '''background: rgb(30, 35, 119);'''
     border-radius: 5px;
     position: relative;
 }
-.h1, .h2{
-    text-align: left;
-    margin-left: 15px;
-    color: rgb(255, 255, 255);
+h1, h2{
+    alignment: center;
+    margin-bottom: 15px;
+    color: rgb(83, 125, 212);
 }
-.h2{
-    color: cornflowerblue !important;
-}
-/*
-CSS FOR THE STEPS
-*/
-input.invalid {
-    background-color: #ffdddd;
+h1{
+  color: red !important;
 }
 
-.step {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbbbbb;
-    border: none;
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.5;
-}
-
-/* Mark the active step: */
-.step.active {
-    opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.step.finish {
-    background-color: #4CAF50;
+.contact-tab form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
 }
 
 /*
@@ -108,28 +90,3 @@ CSS FOR THE COLUMNS AND ROWS
 
 
 
-/*step 4 css*/
-.name-label, .email-label, .lname-label{
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 10px;
-}
-.input-box{
-    width: fit-content;
-    display: block;
-
-}
-.input-box-mail{
-    display: block;
-    width: 50%;
-    height: 150px;
-}
-.input-box-submit{
-    background: #90a4cb;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px ;
-    height: 30px;
-    width: 75px;
-    border-radius: 15px;
-    margin-top: 15px;
-}
