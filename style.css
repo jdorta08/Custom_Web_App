@@ -14,20 +14,20 @@
 .tab, .contact-tab {
     width: fit-content;
     height: fit-content;
-    alignment: left;
+    alignment: center;
     margin: 8% auto;
     border-radius: 5px;
     position: relative;
 }
 
 h1, h2 {
-    alignment: left;
+    alignment: center;
     margin-bottom: 15px;
     color: rgb(83, 125, 212);
 }
 
 h1 {
-    color: red !important;
+    color: white !important;
 }
 
 .contact-tab form {
@@ -37,18 +37,23 @@ h1 {
     left: 40px;
 }
 
+.column label{
+    color: white;
+}
+
 input[type=text], input[type=number], textarea {
     width: 100%;
     padding: 10px 5px;
     margin: 5px 0;
     border: 0;
+    color: white;
     border-bottom: 1px solid #999;
     outline: none;
     background: transparent;
 }
 
 ::placeholder {
-    color: #777;
+    color: #fff;
 }
 
 .btn-box {
