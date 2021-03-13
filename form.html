@@ -12,8 +12,8 @@
 <h2 style="text-align: center;">Design Your Own Pool</h2>
 
 <div class="tab">
-    <h1 class="title">Step 1: Choose Pool Shape</h1>
-    <form>
+    <form id="Form1">
+        <h1 class="title">Step 1: Choose Pool Shape</h1>
         <h2 class="sub-title">Pool Shape:</h2>
 
         <!-- DEFINE FIRST ROW-->
@@ -79,15 +79,17 @@
                 });
             });
         </script>
-
+        <div class ="btn-box">
+            <button type="button" id="Next1">Next</button>
+        </div>
     </form>
 </div>
 <!-- END OF CHECKBOX FOR POOLS SHAPE -->
 
 <!-- Checkbox for Pool Equipment -->
 <div class="tab">
-    <h1 class="title">Step 2: Select Pool Equipment</h1>
-    <form>
+    <form id="Form2">
+        <h1 class="title">Step 2: Select Pool Equipment</h1>
         <h2 class="sub-title">Pool Equipment:</h2>
         <!--DEFINE FIRST ROW-->
         <div class="row">
@@ -118,6 +120,10 @@
             </div>
 
         </div>
+        <div class ="btn-box">
+            <button type="button" id="Back1">Previous</button>
+            <button type="button" id="Next2">Next</button>
+        </div>
     </form>
 </div>
 
@@ -125,8 +131,8 @@
 <!-- STEP 3 POOL FEATURES-->
 
 <div class="tab">
-    <h1 class="title">Step 3: Select Pool Feature Add-Ons</h1>
-    <form>
+    <form id="Form3">
+        <h1 class="title">Step 3: Select Pool Feature Add-Ons</h1>
         <h2 class="sub-title">Pool Feature Add-Ons:</h2>
 
         <!-- DEFINE FIRST ROW-->
@@ -224,31 +230,36 @@
                 <img alt="Pool Fence Image" class="pool-feature" src="addon/pool-fence.jpg">
             </div>
         </div>
+        <div class ="btn-box">
+            <button type="button" id="Back2">Previous</button>
+            <button type="button" id="Next3">Next</button>
+        </div>
     </form>
 </div>
 
 <!-- STEP 4 Contact Info-->
 <div class="contact-tab">
-    <h1 class="title">Step 4: Customer Information</h1>
-    <h2>Contact Information:</h2>
-    <form>
+    <form id="Form4">
+        <h1 class="title">Step 4: Customer Information</h1>
+        <h2>Contact Information:</h2>
 
         <input type="text" placeholder="Name" required>
         <input type="text" placeholder="Email" required>
         <input type="number" placeholder="Phone" required>
-        <input type="text" placeholder="Comments" required>
-
+        <textarea type="text" placeholder="Comments" required></textarea>
+        <div class ="btn-box">
+            <button type="button" id="Back3">Previous</button>
+            <button type="submit">Submit</button>
+        </div>
     </form>
-</div>
-
-<!--Next and Previous Btn -->
-<div style="overflow: auto;">
-    <div style="float: left; padding-top: 20px; padding-bottom: 20px;">
-        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>Step 1</small></div>
+        <div class="step-col"><small>Step 2</small></div>
+        <div class="step-col"><small>Step 3</small></div>
+        <div class="step-col"><small>Step 4</small></div>
     </div>
+
 </div>
-
-
 </body>
 </html>
