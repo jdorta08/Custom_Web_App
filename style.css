@@ -14,15 +14,14 @@
 .tab, .contact-tab {
     width: fit-content;
     height: fit-content;
-    alignment: center;
+    alignment: left;
     margin: 8% auto;
-'' 'background: rgb(30, 35, 119);' ''
-    border-radius: 5 px;
+    border-radius: 5px;
     position: relative;
 }
 
 h1, h2 {
-    alignment: center;
+    alignment: left;
     margin-bottom: 15px;
     color: rgb(83, 125, 212);
 }
